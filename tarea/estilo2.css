@@ -1,0 +1,74 @@
+body {
+	margin: 0;
+	background: #ddd;
+}
+.contenedor {
+	display: flex;
+	justify-content: center;
+}
+.triangulo {
+     width: 0; 
+     height: 0; 
+     border-left: 100px solid #79047E;
+     border-top: 50px solid transparent;
+     border-bottom: 50px solid transparent; 
+     transition: all 1s;
+}
+.caja {
+	margin: 150px 15px;
+	width: 150px;
+	height: 150px;
+	background: crimson;
+	transition: all 3s;
+}
+.circulo {
+	margin: 150px  15px;
+	width: 100px;
+	height: 100px;
+	-moz-burder-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background: #FF0000;
+	transition: all 3s;
+}
+.trapecio {
+	margin: 150px 15px;
+	width: 250px;
+	height: 0px;
+	border-right: 60px solid transparent;
+	border-left: 60px solid transparent;
+	border-top: 100px solid #00FF7C;
+	transition: all 3s;
+}
+
+.triangulo:nth-child(1): {
+}
+
+.triangulo:nth-child(1):hover {
+transform: Translate(100px,-20px)
+}
+
+
+.caja:nth-child(2): {
+}
+
+.caja:nth-child(2):hover {
+transform: Rotate(360grad)
+}
+
+
+.circulo:nth-child(3): {
+}
+
+.circulo:nth-child(3):hover {
+transform: Scale(2,2)
+}
+
+.trapecio:nth-child(4): {
+
+
+}
+
+.trapecio:nth-child(4):hover {
+transform: Skew(25deg, 45deg)
+}
